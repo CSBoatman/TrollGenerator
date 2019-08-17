@@ -6,13 +6,22 @@
 
   <title>HS Troll Generator</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+
+  <script src="generator.js"></script>
 
 </head>
 
-<body>
+<body onload="generator()">
 
-	<!-- Main content goes here -->
+	<div class="header">
+
+		<p>This is a generator to create a random Homestuck troll character. To create another simply click the Again! button or refresh the page.</p>
+
+	</div>
+
+	<div id="placeholder"></div>
+
+	<button onclick="generator()">Again!</button>
 
 </body>
