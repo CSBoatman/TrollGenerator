@@ -1,2 +1,4 @@
 # TrollGenerator
-Homestuck troll generator just for fun and practice
+A Homestuck troll character generator just for fun.
+
+Generator will (hopefully) create a troll name, blood color, strife specibus, and lusus.
