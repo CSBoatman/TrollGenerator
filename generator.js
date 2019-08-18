@@ -56,14 +56,16 @@ function clearDivValue(id){
  */
 function generator(){
 	//Generate random length for name between 4 and 7
-	let len = 4 + Math.floor(Math.random() * Math.floor(4));
-
+	let getLen = function() {
+		return 4 + Math.floor(Math.random() * Math.floor(4));
+	}
+	
 	// Clears any previous generated name
 	clearDivValue("placeholder1");
 	clearDivValue("placeholder2");
 
 	// Shows name in format CVCCVC
-	setDivValue("placeholder1", generateName('default', len));
+	setDivValue("placeholder1", generateName('default', getLen()));
 	// Shows name in format CVCVCV
-	setDivValue("placeholder2", generateName('alternating', len));
+	setDivValue("placeholder2", generateName('alternating', getLen()));
 }
