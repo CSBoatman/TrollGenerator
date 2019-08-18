@@ -16,9 +16,11 @@ function generateName(format, length){
 		// set the source array based on the desired format pattern logic
 		switch (format) { // using a switch statement so you can easily add other cases if desired
 			case "alternating":
+				// if this letter is even, use consonants, else use vowels
 				src = i % 2 == 0 ? con : vow;
 				break;
 			default:
+				// if this letter is the second in a group of three, use vowels, else use consonants
 				src = i % 3 == 1 ? vow : con;
 				break;
 		}
@@ -59,7 +61,7 @@ function generator(){
 	let getLen = function() {
 		return 4 + Math.floor(Math.random() * Math.floor(4));
 	}
-	
+
 	// Clears any previous generated name
 	clearDivValue("placeholder1");
 	clearDivValue("placeholder2");
