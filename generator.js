@@ -28,28 +28,29 @@ function generateName(format, length){
 	return ret;
 }
 
+function setDivValue(id, value){
+	var element = document.createElement("div");
+	element.setAttribute("id", "name");
+	element.appendChild(document.createTextNode(value));
+	document.getElementById(id).appendChild(element);
+}
+
+function clearDivValue(id){
+	if (document.getElementById("name")) {
+		document.getElementById(id).removeChild(document.getElementById("name"));
+	}
+}
+
 function generator(){
 	//Generate random length for name between 4 and 7
 	let len = 4 + Math.floor(Math.random() * Math.floor(4));
 
 	// Clears any previous generated name
-	if (document.getElementById("name")) {
-	document.getElementById("placeholder1").removeChild(document.getElementById("name"));
-	}
-
-	if (document.getElementById("name")) {
-	document.getElementById("placeholder2").removeChild(document.getElementById("name"));
-	}
-
+	clearDivValue("placeholder1");
+	clearDivValue("placeholder2");
+	
 	// Shows name in format CVCCVC
-	var element = document.createElement("div");
-	element.setAttribute("id", "name");
-	element.appendChild(document.createTextNode(generateName('alternating', len)));
-	document.getElementById("placeholder1").appendChild(element);
-
+	setDivValue("placeholder1", generateName('default', len));
 	// Shows name in format CVCVCV
-	var element = document.createElement("div");
-	element.setAttribute("id", "name");
-	element.appendChild(document.createTextNode(generateName('default', 6)));
-	document.getElementById("placeholder2").appendChild(element);
+	setDivValue("placeholder2", generateName('alternating', len));
 }
