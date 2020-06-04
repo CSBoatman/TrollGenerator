@@ -1,10 +1,10 @@
-#TrollGenerator
+# TrollGenerator
 
-##A Homestuck troll character generator just for fun.
+## A Homestuck troll character generator just for fun.
 
-######Generator was originally written in Javascript for use in browser but has since been migrated to Python for in console use. 
+###### Generator was originally written in Javascript for use in browser but has since been migrated to Python for in console use. 
 
-####This generator currently can generate:
+#### This generator currently can generate:
 	
 **Troll 6 Letter Name:**
 	in either CVCCVC format or CVCVCV format
