@@ -39,4 +39,4 @@
 	-(neopronouns to be added soon)-
 
 
-####In the console the generator will print all of the information of the generated troll using their generated pronouns!
+#### In the console the generator will print all of the information of the generated troll using their generated pronouns!
