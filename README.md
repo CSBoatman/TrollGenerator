@@ -2,9 +2,7 @@
 
 ## A Homestuck troll character generator just for fun.
 
-###### Generator was originally written in Javascript for use in browser but has since been migrated to Python for in console use. 
-
-#### This generator currently can generate:
+### This generator currently can generate:
 	
 **Troll 6 Letter Name:**
 	in either CVCCVC format or CVCVCV format
@@ -39,4 +37,6 @@
 	-(neopronouns to be added soon)-
 
 
-#### In the console the generator will print all of the information of the generated troll using their generated pronouns!
+### In the console the generator will print all of the information of the generated troll using their generated pronouns!
+
+###### Generator was originally written in Javascript for use in browser but has since been migrated to Python for in console use. 
